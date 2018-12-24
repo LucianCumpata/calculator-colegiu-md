@@ -1,0 +1,17 @@
+#main__calculator{
+    position: relative;
+    margin-left: 40%;
+    padding-top: 2%;
+    border: 1px hidden black;
+}
+
+#rezultat{
+    color: green;
+    font-weight: bold;
+
+}
+
+#rezultat_medie_curenta{
+    color:blue;
+    font-weight: bold;
+}
