@@ -1,8 +1,18 @@
-#main__calculator{
+
+.container{
+    display: block;
     position: relative;
-    margin-left: 40%;
+}
+
+#current__avg__calculator{
+    margin-left: 43%;
     padding-top: 2%;
-    border: 1px hidden black;
+    
+}
+
+#finall__calculator{
+    margin-left: 43%;
+    padding-top: 2%;
 }
 
 #rezultat{
@@ -14,4 +24,17 @@
 #rezultat_medie_curenta{
     color:blue;
     font-weight: bold;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+h4{
+    display: inline;
+}
+
+#github_logo{
+    height:30px; 
+    width:auto;
 }

@@ -8,43 +8,54 @@
     <meta name="description" content="Calculator medie">
     <title>Calculator medie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/app/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="app/main.css" />
    
 </head>
 
 <body>
-    <div id="main__calculator">
-        <form>
-            <p>Media T</p>
-            <input id="c1n" type="text" name="Pr nota" min="1" max= "10" placeholder="Media T: ex 7.5">
-            <p>Media PR</p>
-            <input id="c2n" type="text" name="Ad nota" min="1" max= "10" placeholder="Media PR: ex 8.34">
-            <p>Media SI</p>
-            <input id="c2n" type="text" name="Ad nota" min="1" max= "10" placeholder="Media SI: ex 8.34">
-            <br>
-            <br>
-            <input type="button" onclick="calculeazaMediaCurenta()" value="calculeaza">
-        </form>
-        <p>Media curenta este <br> (M1+M2)/2=</p><div id="rezultat_medie_curenta">0</div>
-        
-        <br>
-        <br>
-        <form>
-            <p>Media curenta x 0.6</p>
-            <input id="1n" type="text" name="Prima nota" placeholder="Media curenta: ex 7.5">
-            <p>Nota examen x 0.4</p>
-            <input id="2n" type="number" name="A doua nota" min="1" max="10" placeholder="Nota examen: ex 8">
-            <br>
-            <br>
-            <input type="button" onclick="calculeazaMedia()" value="calculeaza">
-        </form>
-        <p>Nota finala este:</p>
-        <p id="rezultat"></p>
-    
-        
+    <header>
+
+    </header>
+    <div class="conainer">
+            <div id="current__avg__calculator">
+                    <form>
+                        <p>Media T</p>
+                        <input id="t1n" type="text" name="nota T" placeholder="Media T: ex 7.5">
+                        <p>Media SI</p>
+                        <input id="si2n" type="text" name="nota SI"  placeholder="Media SI: ex 8.34">
+                        <p>Media PR <i>(nu se aplica tuturor materiilor)</i></p>
+                        <input id="pr2n" type="text" name="nota PR" placeholder="Media PR: ex 6.84">
+                        <br> <br>
+                        <input type="button" onclick="calculeazaMediaCurenta()" value="calculeaza">
+                    </form>
+                    <br>
+                    <div id="rezultat_medie_curenta">Media curenta este:</div>
+                    
+                </div>
+            
+                <div id="finall__calculator">
+                    <form>
+                        <p>Media curenta x 0.6</p>
+                        <input id="1n" type="text" name="nota MC" placeholder="Media curenta: ex 7.5">
+                        <p>Nota examen x 0.4</p>
+                        <input id="2n" type="text" name="nota EX" min="1" max="10" placeholder="Nota examen: ex 8">
+                        <br> <br>
+                        <input type="button" onclick="calculeazaMedia()" value="calculeaza">
+                    </form>
+                    <br>
+                    <div id="rezultat">Nota finala este: </div>
+                    
+                </div>
     </div>
     
-    <script src="/app/main.js"></script>
+    <footer>
+        <a href="https://github.com/LucianCumpata/calculator-colegiu-md">
+            <img id = "github_logo" src="app/img/github-logo.png" alt="github_logo">
+        </a> 
+        <h4> &#169; Lucian Cumpata 2018 </h4> 
+             
+    </footer>
+    <script src="app/main.js"></script>
 </body>
 
 </html>
