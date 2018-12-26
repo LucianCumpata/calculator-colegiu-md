@@ -32,6 +32,11 @@ footer{
 }
 h4{
     display: inline;
+    
+}
+
+a{
+    text-decoration: none;
 }
 
 #github_logo{
